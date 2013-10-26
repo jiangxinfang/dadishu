@@ -1,5 +1,5 @@
 #include "HelloWorldScene.h"
-
+#include "ItemDisplay.h"
 USING_NS_CC;
 
 CCScene* HelloWorld::scene()
@@ -34,31 +34,31 @@ bool HelloWorld::init()
     
     //初始化角色资源
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("laoshuAction.plist");
-    CCSpriteBatchNode *_actors;
-    _actors=CCSpriteBatchNode::create("laoshuAction.png");
-    //关闭角色抗锯齿效果
-    //_actors->getTexture()->setAliasTexParameters();
-    this->addChild(_actors, -5);
-    //initWithSpriteFrameName("hero_idle_00.png")
-    CCSprite* spt=CCSprite::createWithSpriteFrameName("laoshuAction/normal_0000");
-    
-    int i;
-    //空闲动作
-    CCArray *idleFrames = CCArray::createWithCapacity(22);
-    for (i = 0; i < 21; i++)
-    {
-        CCSpriteFrame *frame = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(CCString::createWithFormat("laoshuAction/hit_00%02d", i)->getCString());
-        idleFrames->addObject(frame);
-    }
-    //laoshuAction/hit_0000
-    CCAnimation *idleAnimation = CCAnimation::createWithSpriteFrames(idleFrames, 1.0 / 24.0);
-    spt->runAction(CCRepeatForever::create(CCAnimate::create(idleAnimation)));
 
-    CCLOG("%f%f",spt->getContentSize().width,spt->getContentSize().height);
-    this->addChild(spt);
-   // spt->setAnchorPoint(ccp(0, 0));
-    spt->setPosition(ccp(100,100));
-    spt->setScale(0.5);
+    
+//    CCSprite* spt=CCSprite::createWithSpriteFrameName("laoshuAction/normal_0000");
+//    
+//    int i;
+//    //空闲动作
+//    CCArray *idleFrames = CCArray::createWithCapacity(22);
+//    for (i = 0; i < 21; i++)
+//    {
+//        CCSpriteFrame *frame = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(CCString::createWithFormat("laoshuAction/hit_00%02d", i)->getCString());
+//        idleFrames->addObject(frame);
+//    }
+//    //laoshuAction/hit_0000
+//    CCAnimation *idleAnimation = CCAnimation::createWithSpriteFrames(idleFrames, 1.0 / 24.0);
+//    spt->runAction(CCRepeatForever::create(CCAnimate::create(idleAnimation)));
+//
+//    CCLOG("%f%f",spt->getContentSize().width,spt->getContentSize().height);
+//    this->addChild(spt);
+//    spt->setPosition(ccp(352,480-414));
+//    spt->setOpacity(100);
+//    //spt->setScale(0.5);
+    ItemDisplay* display=ItemDisplay::create();
+    display->transformSize(ccp(229.25, 58.9));
+    display->transformPoint(ccp(350.85, 406.75));
+    this->addChild(display);
     return true;
 }
 

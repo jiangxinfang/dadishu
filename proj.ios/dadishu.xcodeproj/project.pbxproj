@@ -237,6 +237,10 @@
 		98E0B5161817C25F004ACD19 /* laoshuAction.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98E0B5141817C25F004ACD19 /* laoshuAction.plist */; };
 		98E0B5171817C25F004ACD19 /* laoshuAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E0B5151817C25F004ACD19 /* laoshuAction.png */; };
 		9A099C1C181B6B2000D7BA77 /* canzhao.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A099C1B181B6B2000D7BA77 /* canzhao.png */; };
+		9A099C21181B85D900D7BA77 /* ItemDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C1F181B85D900D7BA77 /* ItemDisplay.cpp */; };
+		9A099C24181B954A00D7BA77 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C22181B954A00D7BA77 /* Game.cpp */; };
+		9A099C27181B95A400D7BA77 /* MenuLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C25181B95A400D7BA77 /* MenuLayer.cpp */; };
+		9A099C2A181B95C100D7BA77 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C28181B95C100D7BA77 /* GameLayer.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -735,6 +739,14 @@
 		98E0B5141817C25F004ACD19 /* laoshuAction.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = laoshuAction.plist; sourceTree = "<group>"; };
 		98E0B5151817C25F004ACD19 /* laoshuAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laoshuAction.png; sourceTree = "<group>"; };
 		9A099C1B181B6B2000D7BA77 /* canzhao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canzhao.png; sourceTree = "<group>"; };
+		9A099C1F181B85D900D7BA77 /* ItemDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ItemDisplay.cpp; path = ../Classes/display/ItemDisplay.cpp; sourceTree = "<group>"; };
+		9A099C20181B85D900D7BA77 /* ItemDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemDisplay.h; path = ../Classes/display/ItemDisplay.h; sourceTree = "<group>"; };
+		9A099C22181B954A00D7BA77 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = ../Classes/Game.cpp; sourceTree = "<group>"; };
+		9A099C23181B954A00D7BA77 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Classes/Game.h; sourceTree = "<group>"; };
+		9A099C25181B95A400D7BA77 /* MenuLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuLayer.cpp; path = ../Classes/layer/MenuLayer.cpp; sourceTree = "<group>"; };
+		9A099C26181B95A400D7BA77 /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLayer.h; path = ../Classes/layer/MenuLayer.h; sourceTree = "<group>"; };
+		9A099C28181B95C100D7BA77 /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = ../Classes/layer/GameLayer.cpp; sourceTree = "<group>"; };
+		9A099C29181B95C100D7BA77 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = ../Classes/layer/GameLayer.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1271,6 +1283,14 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
+				9A099C1F181B85D900D7BA77 /* ItemDisplay.cpp */,
+				9A099C20181B85D900D7BA77 /* ItemDisplay.h */,
+				9A099C22181B954A00D7BA77 /* Game.cpp */,
+				9A099C23181B954A00D7BA77 /* Game.h */,
+				9A099C25181B95A400D7BA77 /* MenuLayer.cpp */,
+				9A099C26181B95A400D7BA77 /* MenuLayer.h */,
+				9A099C28181B95C100D7BA77 /* GameLayer.cpp */,
+				9A099C29181B95C100D7BA77 /* GameLayer.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1847,6 +1867,7 @@
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
 				15A3D90E1682F7D5002FB0C5 /* b2Settings.cpp in Sources */,
 				15A3D90F1682F7D5002FB0C5 /* b2StackAllocator.cpp in Sources */,
+				9A099C24181B954A00D7BA77 /* Game.cpp in Sources */,
 				15A3D9101682F7D5002FB0C5 /* b2Timer.cpp in Sources */,
 				15A3D9111682F7D5002FB0C5 /* b2Body.cpp in Sources */,
 				15A3D9121682F7D5002FB0C5 /* b2ContactManager.cpp in Sources */,
@@ -1906,6 +1927,7 @@
 				15A3D9B21682F7F9002FB0C5 /* cpVect.c in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
+				9A099C2A181B95C100D7BA77 /* GameLayer.cpp in Sources */,
 				15A3DA331682F826002FB0C5 /* CCBKeyframe.cpp in Sources */,
 				15A3DA341682F826002FB0C5 /* CCBReader.cpp in Sources */,
 				15A3DA351682F826002FB0C5 /* CCBSequence.cpp in Sources */,
@@ -1949,6 +1971,7 @@
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
 				15A3DA5E1682F826002FB0C5 /* CCPhysicsDebugNode.cpp in Sources */,
 				15A3DA5F1682F826002FB0C5 /* CCPhysicsSprite.cpp in Sources */,
+				9A099C21181B85D900D7BA77 /* ItemDisplay.cpp in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
@@ -2000,6 +2023,7 @@
 				379BB9A317F03F3700829B88 /* CCDisplayManager.cpp in Sources */,
 				379BB9A417F03F3700829B88 /* CCSkin.cpp in Sources */,
 				379BB9A517F03F3700829B88 /* CCColliderDetector.cpp in Sources */,
+				9A099C27181B95A400D7BA77 /* MenuLayer.cpp in Sources */,
 				379BB9A617F03F3700829B88 /* CCArmatureDataManager.cpp in Sources */,
 				379BB9A717F03F3700829B88 /* CCArmatureDefine.cpp in Sources */,
 				379BB9A817F03F3700829B88 /* CCDataReaderHelper.cpp in Sources */,
