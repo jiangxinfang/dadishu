@@ -35,23 +35,25 @@ bool HelloWorld::init()
     //_actors->getTexture()->setAliasTexParameters();
     this->addChild(_actors, -5);
     //initWithSpriteFrameName("hero_idle_00.png")
-    CCSprite* spt=CCSprite::createWithSpriteFrameName("laoshuAction/out_0000");
+    CCSprite* spt=CCSprite::createWithSpriteFrameName("laoshuAction/normal_0000");
     
-//    int i;
-//    //空闲动作
-//    CCArray *idleFrames = CCArray::createWithCapacity(16);
-//    for (i = 0; i < 15; i++)
-//    {
-//        CCSpriteFrame *frame = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(CCString::createWithFormat("laoshuAction/out_00%00d", i)->getCString());
-//        idleFrames->addObject(frame);
-//    }
-//    CCAnimation *idleAnimation = CCAnimation::createWithSpriteFrames(idleFrames, 1.0 / 24.0);
-//    spt->runAction(CCRepeatForever::create(CCAnimate::create(idleAnimation)));
-    //
+    int i;
+    //空闲动作
+    CCArray *idleFrames = CCArray::createWithCapacity(22);
+    for (i = 0; i < 21; i++)
+    {
+        CCSpriteFrame *frame = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(CCString::createWithFormat("laoshuAction/hit_00%02d", i)->getCString());
+        idleFrames->addObject(frame);
+    }
+    //laoshuAction/hit_0000
+    CCAnimation *idleAnimation = CCAnimation::createWithSpriteFrames(idleFrames, 1.0 / 24.0);
+    spt->runAction(CCRepeatForever::create(CCAnimate::create(idleAnimation)));
+
     CCLOG("%f%f",spt->getContentSize().width,spt->getContentSize().height);
     this->addChild(spt);
-    //spt->setAnchorPoint(ccp(0, 0));
-    //spt->setPosition(ccp(100,300));
+   // spt->setAnchorPoint(ccp(0, 0));
+    spt->setPosition(ccp(100,100));
+    spt->setScale(0.5);
     return true;
 }
 
