@@ -26,6 +26,11 @@ bool HelloWorld::init()
     {
         return false;
     }
+    //添加a参照图
+    CCSprite* back=CCSprite::create("canzhao.png");
+    back->setAnchorPoint(CCPointZero);
+    back->setPosition(CCPointZero);
+    this->addChild(back);
     
     //初始化角色资源
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("laoshuAction.plist");
