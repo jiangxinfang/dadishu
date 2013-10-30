@@ -15,6 +15,13 @@ using namespace cocos2d;
 USING_NS_CC;
 class ItemDisplay:public CCSprite,public CCTargetedTouchDelegate{
 public:
+    typedef enum _ActionState {
+        kActionStateNone = 0,
+        kActionStateNormal,
+        kActionStateHit,
+        kActionStateGoUp,
+        kActionStateGoDown
+    } ActionState;
     ItemDisplay();
     ~ItemDisplay();
     virtual bool init();
@@ -31,6 +38,31 @@ public:
     virtual void   onExit();
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch* touch, CCEvent* event);//松开
+    CCRect touchRect;
+    bool isTouch;
+    
+    CCSprite* _display;
+    //CC_SYNTHESIZE(CCSprite*,_display,Display);
+    
+    //CC_SYNTHESIZE_RETAIN(CCAction*, _normalAction, NormalAction);
+    //CC_SYNTHESIZE_RETAIN(CCAction*, _hitAction, HitAction);
+    //CC_SYNTHESIZE_RETAIN(CCAction*, _goUpAction, GoUpAction);
+    //CC_SYNTHESIZE_RETAIN(CCAction*, _goDownAction, GoDownAction);
+    CCAction* _normalAction;
+    CCAction* _hitAction;
+    CCAction* _goUpAction;
+    CCAction* _goDownAction;
+    
+    ActionState _actionState;
+    
+    CCAction* getAction(ActionState state);
+    void normal();
+    void hit();
+    void goUp();
+    void goDown();
+    
+    
+    
     CREATE_FUNC(ItemDisplay);
     
 };

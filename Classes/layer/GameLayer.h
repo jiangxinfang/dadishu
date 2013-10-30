@@ -19,6 +19,9 @@ public:
     ~GameLayer();
     virtual bool init();
     CCArray* mouseList;
+    CCSpriteBatchNode *_actors;
+    void ontick(float fDelta);
+    int randomBetweenInt(int max, int min);
     CREATE_FUNC(GameLayer);
 };
 
