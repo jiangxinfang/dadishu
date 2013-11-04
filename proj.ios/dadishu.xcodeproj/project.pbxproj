@@ -246,7 +246,12 @@
 		9AF6851118277A9300CC7FA3 /* laoshuAction.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF684FC18277A9300CC7FA3 /* laoshuAction.plist */; };
 		9AF6851218277A9300CC7FA3 /* laoshuAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF684FD18277A9300CC7FA3 /* laoshuAction.png */; };
 		9AF6851318277A9300CC7FA3 /* sceneBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF684FE18277A9300CC7FA3 /* sceneBack.png */; };
-		9AF6852318277AB800CC7FA3 /* StartrScreen in Resources */ = {isa = PBXBuildFile; fileRef = 9AF6852218277AB800CC7FA3 /* StartrScreen */; };
+		9AF68526182781A700CC7FA3 /* Export in Resources */ = {isa = PBXBuildFile; fileRef = 9AF68525182781A700CC7FA3 /* Export */; };
+		9AF6852D182781BC00CC7FA3 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF68527182781BC00CC7FA3 /* head.png */; };
+		9AF6852E182781BC00CC7FA3 /* startbtn1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF68528182781BC00CC7FA3 /* startbtn1.png */; };
+		9AF6852F182781BC00CC7FA3 /* startBtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF68529182781BC00CC7FA3 /* startBtn2.png */; };
+		9AF68530182781BC00CC7FA3 /* StartPenel_1 in Resources */ = {isa = PBXBuildFile; fileRef = 9AF6852A182781BC00CC7FA3 /* StartPenel_1 */; };
+		9AF68532182781BC00CC7FA3 /* StartScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AF6852C182781BC00CC7FA3 /* StartScreen.json */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -752,7 +757,12 @@
 		9AF684FC18277A9300CC7FA3 /* laoshuAction.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = laoshuAction.plist; sourceTree = "<group>"; };
 		9AF684FD18277A9300CC7FA3 /* laoshuAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laoshuAction.png; sourceTree = "<group>"; };
 		9AF684FE18277A9300CC7FA3 /* sceneBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sceneBack.png; sourceTree = "<group>"; };
-		9AF6852218277AB800CC7FA3 /* StartrScreen */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StartrScreen; sourceTree = "<group>"; };
+		9AF68525182781A700CC7FA3 /* Export */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Export; sourceTree = "<group>"; };
+		9AF68527182781BC00CC7FA3 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		9AF68528182781BC00CC7FA3 /* startbtn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbtn1.png; sourceTree = "<group>"; };
+		9AF68529182781BC00CC7FA3 /* startBtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBtn2.png; sourceTree = "<group>"; };
+		9AF6852A182781BC00CC7FA3 /* StartPenel_1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StartPenel_1; sourceTree = "<group>"; };
+		9AF6852C182781BC00CC7FA3 /* StartScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StartScreen.json; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1735,7 +1745,12 @@
 		9AF684CA1827781E00CC7FA3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9AF6852218277AB800CC7FA3 /* StartrScreen */,
+				9AF68527182781BC00CC7FA3 /* head.png */,
+				9AF68528182781BC00CC7FA3 /* startbtn1.png */,
+				9AF68529182781BC00CC7FA3 /* startBtn2.png */,
+				9AF6852A182781BC00CC7FA3 /* StartPenel_1 */,
+				9AF6852C182781BC00CC7FA3 /* StartScreen.json */,
+				9AF68525182781A700CC7FA3 /* Export */,
 				9AF684FB18277A9300CC7FA3 /* HelloWorld.png */,
 				9AF684FC18277A9300CC7FA3 /* laoshuAction.plist */,
 				9AF684FD18277A9300CC7FA3 /* laoshuAction.png */,
@@ -1831,21 +1846,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF684E41827781E00CC7FA3 /* Marker Felt.ttf in Resources */,
+				9AF6852D182781BC00CC7FA3 /* head.png in Resources */,
 				9AF6851118277A9300CC7FA3 /* laoshuAction.plist in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				9AF684E61827781E00CC7FA3 /* grass.png in Resources */,
 				9AF684F918277A8400CC7FA3 /* CloseNormal.png in Resources */,
 				9AF684E21827781E00CC7FA3 /* fenche.plist in Resources */,
-				9AF6852318277AB800CC7FA3 /* StartrScreen in Resources */,
 				9AF6851218277A9300CC7FA3 /* laoshuAction.png in Resources */,
 				379BB9CC17F03F3700829B88 /* json_internalarray.inl in Resources */,
+				9AF6852F182781BC00CC7FA3 /* startBtn2.png in Resources */,
 				9AF684E31827781E00CC7FA3 /* fenche.png in Resources */,
 				379BB9CD17F03F3700829B88 /* json_internalmap.inl in Resources */,
 				9AF6851318277A9300CC7FA3 /* sceneBack.png in Resources */,
 				9AF684E51827781E00CC7FA3 /* grass.plist in Resources */,
+				9AF68532182781BC00CC7FA3 /* StartScreen.json in Resources */,
 				379BB9D017F03F3700829B88 /* json_valueiterator.inl in Resources */,
+				9AF68526182781A700CC7FA3 /* Export in Resources */,
+				9AF6852E182781BC00CC7FA3 /* startbtn1.png in Resources */,
 				9AF684F818277A8400CC7FA3 /* canzhao.png in Resources */,
 				9AF684FA18277A8400CC7FA3 /* CloseSelected.png in Resources */,
+				9AF68530182781BC00CC7FA3 /* StartPenel_1 in Resources */,
 				379BB9D217F03F3700829B88 /* sconscript in Resources */,
 				9AF6851018277A9300CC7FA3 /* HelloWorld.png in Resources */,
 			);
