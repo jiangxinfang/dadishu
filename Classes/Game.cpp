@@ -34,7 +34,7 @@ bool Game::init(){
         //引入场景
        CCNode *pNode=CCSSceneReader::sharedSceneReader()->createNodeWithSceneFile("StartScreen.json");
         this->addChild(pNode);
-        // ActionManager::shareManager()->playActionByName("eye.ExportJson", "Animation3");
+         ActionManager::shareManager()->playActionByName("eye.ExportJson", "Animation3");
         //CCDirector::sharedDirector()->pushScene((CCScene *)pNode);
         //this->addChild(pNode);
         // _gameLayer=GameLayer::create();
