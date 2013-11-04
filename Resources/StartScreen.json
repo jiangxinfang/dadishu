@@ -24,7 +24,66 @@
       "x": 0,
       "y": 0,
       "zorder": 1,
-      "gameobjects": [],
+      "gameobjects": [
+        {
+          "__type": "ComGameObjectSurrogate:#EditorCommon.JsonModel",
+          "classname": "CCNode",
+          "name": null,
+          "canedit": true,
+          "objecttag": 10005,
+          "rotation": 0,
+          "scalex": 0.65,
+          "scaley": 0.65,
+          "visible": 1,
+          "x": 609.96044921875,
+          "y": 103.92156982421875,
+          "zorder": 1,
+          "gameobjects": [],
+          "components": [
+            {
+              "__type": "ComArmatureAdapterSurrogate:#EditorCommon.JsonModel.Component",
+              "classname": "CCArmature",
+              "name": "CCArmature",
+              "file": null,
+              "fileData": {
+                "path": "eye/eye.ExportJson",
+                "plistFile": null,
+                "resourceType": 0
+              },
+              "selectedactionname": "Animation1"
+            }
+          ]
+        },
+        {
+          "__type": "ComGameObjectSurrogate:#EditorCommon.JsonModel",
+          "classname": "CCNode",
+          "name": null,
+          "canedit": true,
+          "objecttag": 10006,
+          "rotation": 0,
+          "scalex": 1.5,
+          "scaley": 1.5,
+          "visible": 1,
+          "x": 213.25302124023438,
+          "y": 183.13253784179688,
+          "zorder": 1,
+          "gameobjects": [],
+          "components": [
+            {
+              "__type": "ComArmatureAdapterSurrogate:#EditorCommon.JsonModel.Component",
+              "classname": "CCArmature",
+              "name": "CCArmature",
+              "file": null,
+              "fileData": {
+                "path": "fengche/fengche.ExportJson",
+                "plistFile": null,
+                "resourceType": 0
+              },
+              "selectedactionname": "Animation1"
+            }
+          ]
+        }
+      ],
       "components": [
         {
           "__type": "ComGUIAdapterSurrogate:#EditorCommon.JsonModel.Component",
@@ -36,35 +95,6 @@
             "plistFile": null,
             "resourceType": 0
           }
-        }
-      ]
-    },
-    {
-      "__type": "ComGameObjectSurrogate:#EditorCommon.JsonModel",
-      "classname": "CCNode",
-      "name": null,
-      "canedit": true,
-      "objecttag": 10020,
-      "rotation": 0,
-      "scalex": 0.65,
-      "scaley": 0.65,
-      "visible": 1,
-      "x": 611,
-      "y": 104.33332824707031,
-      "zorder": 1,
-      "gameobjects": [],
-      "components": [
-        {
-          "__type": "ComArmatureAdapterSurrogate:#EditorCommon.JsonModel.Component",
-          "classname": "CCArmature",
-          "name": "CCArmature",
-          "file": null,
-          "fileData": {
-            "path": "Export/eye.ExportJson",
-            "plistFile": null,
-            "resourceType": 0
-          },
-          "selectedactionname": "Animation3"
         }
       ]
     }
