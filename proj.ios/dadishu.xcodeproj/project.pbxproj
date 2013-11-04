@@ -240,6 +240,11 @@
 		9A099C24181B954A00D7BA77 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C22181B954A00D7BA77 /* Game.cpp */; };
 		9A099C27181B95A400D7BA77 /* MenuLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C25181B95A400D7BA77 /* MenuLayer.cpp */; };
 		9A099C2A181B95C100D7BA77 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C28181B95C100D7BA77 /* GameLayer.cpp */; };
+		9A8464AA18217AB1002FBBE9 /* startbtn1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8464A618217AB1002FBBE9 /* startbtn1.png */; };
+		9A8464AB18217AB1002FBBE9 /* startBtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8464A718217AB1002FBBE9 /* startBtn2.png */; };
+		9A8464AC18217AB1002FBBE9 /* StartPenel_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A8464A818217AB1002FBBE9 /* StartPenel_1.json */; };
+		9A8464AD18217AB1002FBBE9 /* 资源整理.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8464A918217AB1002FBBE9 /* 资源整理.png */; };
+		9A8464B018217B6D002FBBE9 /* StartLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8464AE18217B6D002FBBE9 /* StartLayer.cpp */; };
 		9AF7EA37181C229F00DF5C23 /* sceneBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7EA36181C229F00DF5C23 /* sceneBack.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -745,6 +750,12 @@
 		9A099C26181B95A400D7BA77 /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLayer.h; path = ../Classes/layer/MenuLayer.h; sourceTree = "<group>"; };
 		9A099C28181B95C100D7BA77 /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = ../Classes/layer/GameLayer.cpp; sourceTree = "<group>"; };
 		9A099C29181B95C100D7BA77 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = ../Classes/layer/GameLayer.h; sourceTree = "<group>"; };
+		9A8464A618217AB1002FBBE9 /* startbtn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbtn1.png; sourceTree = "<group>"; };
+		9A8464A718217AB1002FBBE9 /* startBtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBtn2.png; sourceTree = "<group>"; };
+		9A8464A818217AB1002FBBE9 /* StartPenel_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StartPenel_1.json; sourceTree = "<group>"; };
+		9A8464A918217AB1002FBBE9 /* 资源整理.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资源整理.png"; sourceTree = "<group>"; };
+		9A8464AE18217B6D002FBBE9 /* StartLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StartLayer.cpp; path = ../Classes/layer/StartLayer.cpp; sourceTree = "<group>"; };
+		9A8464AF18217B6D002FBBE9 /* StartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartLayer.h; path = ../Classes/layer/StartLayer.h; sourceTree = "<group>"; };
 		9AF7EA36181C229F00DF5C23 /* sceneBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sceneBack.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1288,6 +1299,8 @@
 				9A099C26181B95A400D7BA77 /* MenuLayer.h */,
 				9A099C28181B95C100D7BA77 /* GameLayer.cpp */,
 				9A099C29181B95C100D7BA77 /* GameLayer.h */,
+				9A8464AE18217B6D002FBBE9 /* StartLayer.cpp */,
+				9A8464AF18217B6D002FBBE9 /* StartLayer.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1732,6 +1745,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9A8464A418217AB1002FBBE9 /* Export */,
 				9AF7EA36181C229F00DF5C23 /* sceneBack.png */,
 				9A099C1B181B6B2000D7BA77 /* canzhao.png */,
 				98E0B5141817C25F004ACD19 /* laoshuAction.plist */,
@@ -1749,6 +1763,25 @@
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		9A8464A418217AB1002FBBE9 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				9A8464A518217AB1002FBBE9 /* StartPenel_1 */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		9A8464A518217AB1002FBBE9 /* StartPenel_1 */ = {
+			isa = PBXGroup;
+			children = (
+				9A8464A618217AB1002FBBE9 /* startbtn1.png */,
+				9A8464A718217AB1002FBBE9 /* startBtn2.png */,
+				9A8464A818217AB1002FBBE9 /* StartPenel_1.json */,
+				9A8464A918217AB1002FBBE9 /* 资源整理.png */,
+			);
+			path = StartPenel_1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1822,6 +1855,7 @@
 			files = (
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
+				9A8464AB18217AB1002FBBE9 /* startBtn2.png in Resources */,
 				9AF7EA37181C229F00DF5C23 /* sceneBack.png in Resources */,
 				9A099C1C181B6B2000D7BA77 /* canzhao.png in Resources */,
 				98E0B5171817C25F004ACD19 /* laoshuAction.png in Resources */,
@@ -1830,6 +1864,7 @@
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				98E0B5161817C25F004ACD19 /* laoshuAction.plist in Resources */,
+				9A8464AC18217AB1002FBBE9 /* StartPenel_1.json in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
@@ -1839,6 +1874,8 @@
 				379BB9CD17F03F3700829B88 /* json_internalmap.inl in Resources */,
 				379BB9D017F03F3700829B88 /* json_valueiterator.inl in Resources */,
 				379BB9D217F03F3700829B88 /* sconscript in Resources */,
+				9A8464AA18217AB1002FBBE9 /* startbtn1.png in Resources */,
+				9A8464AD18217AB1002FBBE9 /* 资源整理.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1883,6 +1920,7 @@
 				15A3D91D1682F7D5002FB0C5 /* b2EdgeAndPolygonContact.cpp in Sources */,
 				15A3D91E1682F7D5002FB0C5 /* b2PolygonAndCircleContact.cpp in Sources */,
 				15A3D91F1682F7D5002FB0C5 /* b2PolygonContact.cpp in Sources */,
+				9A8464B018217B6D002FBBE9 /* StartLayer.cpp in Sources */,
 				15A3D9201682F7D5002FB0C5 /* b2DistanceJoint.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
