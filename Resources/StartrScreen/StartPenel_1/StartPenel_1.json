@@ -81,6 +81,54 @@
                   "scale9Height": 33,
                   "scale9Width": 253
                 }
+              },
+              {
+                "classname": "ImageView",
+                "name": null,
+                "children": [],
+                "options": {
+                  "__type": "ComGUIImageViewSurrogate:#EditorCommon.JsonModel.Component.GUI",
+                  "classname": "ImageView",
+                  "name": "ImageView",
+                  "ZOrder": 0,
+                  "actiontag": 28,
+                  "anchorPointX": 0.5,
+                  "anchorPointY": 0.5,
+                  "classType": null,
+                  "colorB": 255,
+                  "colorG": 255,
+                  "colorR": 255,
+                  "flipX": false,
+                  "flipY": false,
+                  "height": 116,
+                  "ignoreSize": true,
+                  "opacity": 255,
+                  "rotation": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "tag": 8,
+                  "touchAble": false,
+                  "useMergedTexture": false,
+                  "visible": true,
+                  "width": 98,
+                  "x": 611,
+                  "xProportion": 0.76375,
+                  "y": 82,
+                  "yProportion": 0.170833334,
+                  "capInsetsHeight": 0,
+                  "capInsetsWidth": 0,
+                  "capInsetsX": 0,
+                  "capInsetsY": 0,
+                  "fileName": null,
+                  "fileNameData": {
+                    "path": "head.png",
+                    "plistFile": null,
+                    "resourceType": 0
+                  },
+                  "scale9Enable": false,
+                  "scale9Height": 116,
+                  "scale9Width": 98
+                }
               }
             ],
             "options": {
@@ -149,7 +197,7 @@
           "scaleX": 1,
           "scaleY": 1,
           "tag": 2,
-          "touchAble": false,
+          "touchAble": true,
           "useMergedTexture": false,
           "visible": true,
           "width": 800,
