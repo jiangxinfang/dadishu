@@ -32,13 +32,13 @@ bool Game::init(){
 //        startBtn->addReleaseEvent(this, coco_releaseselector(Game::starCallBack));
         
         //引入场景
-       CCNode *pNode=CCSSceneReader::sharedSceneReader()->createNodeWithSceneFile("StartrScreen/StartScreen.json");
-        
+       CCNode *pNode=CCSSceneReader::sharedSceneReader()->createNodeWithSceneFile("StartScreen.json");
+        this->addChild(pNode);
         // ActionManager::shareManager()->playActionByName("eye.ExportJson", "Animation3");
         //CCDirector::sharedDirector()->pushScene((CCScene *)pNode);
         //this->addChild(pNode);
-         _gameLayer=GameLayer::create();
-        this->addChild(_gameLayer,0);
+        // _gameLayer=GameLayer::create();
+       // this->addChild(_gameLayer,0);
         bl=true;
     } while (0);
     return bl;
