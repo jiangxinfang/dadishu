@@ -22,6 +22,9 @@ public:
     ~Game();
     virtual bool init();
     void starCallBack(CCObject *pSender);
+    void helpCallback(CCObject *pSender);
+    Layout* helpPanel;
+    
     CREATE_FUNC(Game);
     CC_SYNTHESIZE(GameLayer*, _gameLayer, GameLayer);
 };
