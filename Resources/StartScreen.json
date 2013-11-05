@@ -21,8 +21,8 @@
       "scalex": 1,
       "scaley": 1,
       "visible": 1,
-      "x": 0,
-      "y": 0,
+      "x": 1,
+      "y": 2,
       "zorder": 1,
       "gameobjects": [
         {
@@ -64,8 +64,8 @@
           "scalex": 1.5,
           "scaley": 1.5,
           "visible": 1,
-          "x": 213.25302124023438,
-          "y": 183.13253784179688,
+          "x": 158.84124755859375,
+          "y": 186.07371520996094,
           "zorder": 1,
           "gameobjects": [],
           "components": [
@@ -95,6 +95,35 @@
             "plistFile": null,
             "resourceType": 0
           }
+        }
+      ]
+    },
+    {
+      "__type": "ComGameObjectSurrogate:#EditorCommon.JsonModel",
+      "classname": "CCNode",
+      "name": null,
+      "canedit": true,
+      "objecttag": 10006,
+      "rotation": 0,
+      "scalex": 1,
+      "scaley": 1,
+      "visible": 1,
+      "x": 29.411685943603516,
+      "y": 32.646995544433594,
+      "zorder": 1,
+      "gameobjects": [],
+      "components": [
+        {
+          "__type": "ComSimpleAudioSurrogate:#EditorCommon.JsonModel.Component",
+          "classname": "CCComAudio",
+          "name": "yinyue",
+          "file": null,
+          "fileData": {
+            "path": "sound/sound 9 (yinyue).mp3",
+            "plistFile": null,
+            "resourceType": 0
+          },
+          "loop": 1
         }
       ]
     }
