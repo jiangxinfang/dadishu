@@ -121,6 +121,9 @@ bool GameLayer::init(){
         display->setTag(12);
         mouseList->addObject(display);
         mouseList->retain();
+        //添加UI
+        
+        
         /////////////启动游戏心跳//////////////
         this->schedule(schedule_selector(GameLayer::ontick), 2.0);
     } while (0);
