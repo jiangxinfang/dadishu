@@ -234,6 +234,7 @@
 		9A099C27181B95A400D7BA77 /* MenuLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C25181B95A400D7BA77 /* MenuLayer.cpp */; };
 		9A099C2A181B95C100D7BA77 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A099C28181B95C100D7BA77 /* GameLayer.cpp */; };
 		9A8464B018217B6D002FBBE9 /* StartLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8464AE18217B6D002FBBE9 /* StartLayer.cpp */; };
+		9AC11F3F18279A0A00BF9BCA /* eye in Resources */ = {isa = PBXBuildFile; fileRef = 9AC11F3E18279A0A00BF9BCA /* eye */; };
 		9AF684E21827781E00CC7FA3 /* fenche.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF684CB1827781E00CC7FA3 /* fenche.plist */; };
 		9AF684E31827781E00CC7FA3 /* fenche.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF684CC1827781E00CC7FA3 /* fenche.png */; };
 		9AF684E41827781E00CC7FA3 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF684CE1827781E00CC7FA3 /* Marker Felt.ttf */; };
@@ -743,6 +744,7 @@
 		9A099C29181B95C100D7BA77 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = ../Classes/layer/GameLayer.h; sourceTree = "<group>"; };
 		9A8464AE18217B6D002FBBE9 /* StartLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StartLayer.cpp; path = ../Classes/layer/StartLayer.cpp; sourceTree = "<group>"; };
 		9A8464AF18217B6D002FBBE9 /* StartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartLayer.h; path = ../Classes/layer/StartLayer.h; sourceTree = "<group>"; };
+		9AC11F3E18279A0A00BF9BCA /* eye */ = {isa = PBXFileReference; lastKnownFileType = folder; path = eye; sourceTree = "<group>"; };
 		9AF684CB1827781E00CC7FA3 /* fenche.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fenche.plist; sourceTree = "<group>"; };
 		9AF684CC1827781E00CC7FA3 /* fenche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fenche.png; sourceTree = "<group>"; };
 		9AF684CE1827781E00CC7FA3 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
@@ -1741,6 +1743,7 @@
 		9AF684CA1827781E00CC7FA3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9AC11F3E18279A0A00BF9BCA /* eye */,
 				9AF68535182798B500CC7FA3 /* back.png */,
 				9AF685331827985800CC7FA3 /* fengche */,
 				9AF68527182781BC00CC7FA3 /* head.png */,
@@ -1849,6 +1852,7 @@
 				379BB9CC17F03F3700829B88 /* json_internalarray.inl in Resources */,
 				9AF6852F182781BC00CC7FA3 /* startBtn2.png in Resources */,
 				9AF684E31827781E00CC7FA3 /* fenche.png in Resources */,
+				9AC11F3F18279A0A00BF9BCA /* eye in Resources */,
 				379BB9CD17F03F3700829B88 /* json_internalmap.inl in Resources */,
 				9AF68536182798B500CC7FA3 /* back.png in Resources */,
 				9AF685341827985800CC7FA3 /* fengche in Resources */,

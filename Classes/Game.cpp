@@ -32,21 +32,23 @@ bool Game::init(){
 //        startBtn->addReleaseEvent(this, coco_releaseselector(Game::starCallBack));
         
         //引入场景
-       CCNode *pNode=CCSSceneReader::sharedSceneReader()->createNodeWithSceneFile("StartScreen.json");
+        CCNode *pNode=CCSSceneReader::sharedSceneReader()->createNodeWithSceneFile("StartScreen.json");;
         this->addChild(pNode);
-        // ActionManager::shareManager()->playActionByName("eye.ExportJson", "Animation3");
-        //CCDirector::sharedDirector()->pushScene((CCScene *)pNode);
-        //this->addChild(pNode);
-        // _gameLayer=GameLayer::create();
-       // this->addChild(_gameLayer,0);
+        CCNode *node=pNode->getChildByTag(10004);
+        CCComRender *com=(CCComRender *)node->getComponent("GUIComponent");
+        UILayer* layer=(UILayer *)com->getNode();
+        Layout* p = dynamic_cast<Layout*>(layer->getWidgetByName("Panel"));
+        Layout* panel = dynamic_cast<Layout*>(p->getChildByName("Panel"));
+        UIButton* startBtn = dynamic_cast<UITextButton*>(panel->getChildByName("Button"));
+        startBtn->addReleaseEvent(this, coco_releaseselector(Game::starCallBack));
+        
         bl=true;
     } while (0);
     return bl;
 }
 void Game::starCallBack(CCObject *pSender){
     CCLog("点击");
-    this->removeAllChildren();
-    this->release();
+    this->removeAllChildrenWithCleanup(true);
      _gameLayer=GameLayer::create();
     this->addChild(_gameLayer,0);
 }
